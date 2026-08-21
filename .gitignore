@@ -1,0 +1,29 @@
+# Secrets and credentials: never committed, no exceptions
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+client_secret*.json
+service-account*.json
+token.json
+*token*.txt
+*.credentials
+secrets/
+.secrets/
+
+# Claude credential/session artifacts
+.claude/.env
+memory-audit.env
+session-env/
+shell-snapshots/
+
+# Temp exports that may contain sensitive data
+*.tmp
+~$*
+.DS_Store
+Thumbs.db
