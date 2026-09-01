@@ -1,0 +1,15 @@
+# savant-share is a delivery surface, never a discovery surface.
+#
+# Everything published here is a client deliverable, encrypted at rest and
+# opened with a passcode. Nothing here is intended to be found by search, and
+# nothing here should ever appear in a search result, an index, a cache, or an
+# AI training corpus.
+#
+# This file is a request, not an access control. It is honoured by well-behaved
+# crawlers and ignored by everything else, which is exactly why the real control
+# is the AES-256-GCM encryption on every page and the noindex,nofollow,noarchive
+# meta tag each one carries. Treat robots.txt as the outermost of three layers,
+# never as the one doing the work.
+
+User-agent: *
+Disallow: /
